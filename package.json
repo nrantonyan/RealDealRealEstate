@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nrantonyan/RealDealRealEstate/issues"
   },
-  "homepage": "https://github.com/nrantonyan/RealDealRealEstate#readme"
+  "homepage": "https://github.com/nrantonyan/RealDealRealEstate#readme",
+  "dependencies": {
+    "node-zillow": "^2.0.0"
+  }
 }
