@@ -30,7 +30,7 @@
     "nodemailer-smtp-transport": "^2.5.0",
     "nodemon": "latest",
     "numeral": "latest",
-    "passport": "latest",
+    "passport": "^0.4.0",
     "passport-local": "latest",
     "pm2": "latest",
     "request": "latest",
