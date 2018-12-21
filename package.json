@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/nrantonyan/RealDealRealEstate/issues"
   },
-  "homepage": "https://github.com/nrantonyan/RealDealRealEstate#readme"
+  "homepage": "https://github.com/nrantonyan/RealDealRealEstate#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "handlebars": "^4.0.12",
+    "mysql": "^2.16.0",
+    "parser": "^0.1.4",
+    "sequelize": "^4.42.0"
+  }
 }
