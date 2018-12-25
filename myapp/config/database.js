@@ -1,6 +1,19 @@
-module.exports = {
+var mysql = require("mysql"); 
 
-    'url' : 'mongodb://127.1.1.0/express' // looks like mongodb://<user>:<pass>@mongo.onmodulus.net:27017/Mikha4ot
-     
-     //Please replace your host file Here : 127.1.1.0 , Express is Collection Name (Database Name)
-};
+var connection = mysql.createConnection({
+ port: 3306,
+ host: "localhost", 
+ user: "root", 
+ password: "", 
+ database: "realestate_db",
+})
+
+connection.connect(function (err) {
+  if (err) {
+    console.log("ERROR: MYSQL connection error -- " + err.stack + "\n\n");
+    return;
+  }
+    console.log("Connected to MYSQL database as ID " + connection.threadId + "\n\n");
+});
+
+module.exports = connection;
