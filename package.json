@@ -18,12 +18,14 @@
   },
   "homepage": "https://github.com/nrantonyan/RealDealRealEstate#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "fs": "0.0.1-security",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
     "path": "^0.12.7",
+    "mysql": "^2.16.0",
     "sequelize": "^4.42.0"
   }
 }
