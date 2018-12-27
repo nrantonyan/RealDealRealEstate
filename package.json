@@ -1,7 +1,7 @@
 {
   "name": "realdealrealestate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Please note that we have already created a package.json and saved it to the master branch. Therefore, you will not need to do an npm init.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,16 +16,5 @@
   "bugs": {
     "url": "https://github.com/nrantonyan/RealDealRealEstate/issues"
   },
-  "homepage": "https://github.com/nrantonyan/RealDealRealEstate#readme",
-  "dependencies": {
-<<<<<<< HEAD
-    "express": "^4.16.4",
-    "handlebars": "^4.0.12",
-    "mysql": "^2.16.0",
-    "parser": "^0.1.4",
-    "sequelize": "^4.42.0"
-=======
-    "node-zillow": "^2.0.0"
->>>>>>> raj
-  }
+  "homepage": "https://github.com/nrantonyan/RealDealRealEstate#readme"
 }
