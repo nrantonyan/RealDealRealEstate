@@ -1,0 +1,23 @@
+header {
+  padding: 60px;
+  text-align: center;
+  background: lightgray;
+  color: white;
+  font-size: 30px;
+}
+.header-logo {
+  width: 300px;
+  height: auto;
+}
+#login-icon {
+  width: 25px;
+  height: auto;
+}
+.nav-item{
+  float: right;
+}
+.social-media-icons {
+width: 30px;
+float: right;
+opacity: .6;
+}
