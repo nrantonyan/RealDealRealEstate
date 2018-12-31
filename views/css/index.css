@@ -1,38 +1,80 @@
 header {
-  padding: 60px;
+  padding: 10px;
   text-align: center;
-  background: lightgray;
+  background: whitesmoke;
   color: white;
   font-size: 30px;
 }
 
 .header-logo {
-  width: 300px;
+  width: 200px;
   height: auto;
 }
+
+#login-icon {
+  width: 25px;
+  height: auto;
+}
+
 .carousel-img {
-  padding: 60px;
-  text-align: center;
-  background:white;
+  padding: 1px;
+  background: white;
   color: white;
   font-size: 30px;
+}
+
+.search-text {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding: 19px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.text-header {
+  color: royalblue;
+}
+
+.text-body {
+  color: black;
+}
+
+#imaginary_container {
+  display: block;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 200px;
 }
 
 .d-block {
   text-align: center;
 }
 
-.search-btn{
+.search-btn {
   width: 32px;
-  height:auto;
-}
-#login-icon {
-  width: 25px;
   height: auto;
 }
 
+footer{
+  background-color: black;
+  color: whitesmoke;
+}
+.contact {
+  padding:25px;
+  width: 50%;
+  text-align: left;
+  margin-left: 200px
+  
+}
+
+.connect {
+  padding:25px;
+  width: 50%;
+  text-align: left;
+  margin-left: 200px
+}
 .social-media-icons {
-  width: 30px;
-  float: right;
-  opacity: .6;
+  width: 40px;
 }
