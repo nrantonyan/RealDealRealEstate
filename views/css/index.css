@@ -1,5 +1,5 @@
 header {
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   background: whitesmoke;
   color: white;
@@ -7,7 +7,12 @@ header {
 }
 
 .header-logo {
-  width: 300px;
+  width: 200px;
+  height: auto;
+}
+
+#login-icon {
+  width: 25px;
   height: auto;
 }
 
@@ -52,13 +57,24 @@ header {
   height: auto;
 }
 
-#login-icon {
-  width: 25px;
-  height: auto;
+footer{
+  background-color: black;
+  color: whitesmoke;
+}
+.contact {
+  padding:25px;
+  width: 50%;
+  text-align: left;
+  margin-left: 200px
+  
 }
 
+.connect {
+  padding:25px;
+  width: 50%;
+  text-align: left;
+  margin-left: 200px
+}
 .social-media-icons {
-  width: 30px;
-  float: right;
-  opacity: .6;
+  width: 40px;
 }
