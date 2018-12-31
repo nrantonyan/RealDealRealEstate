@@ -29,5 +29,5 @@ CREATE TABLE users_projects (
   monthly_holding_cost INTEGER (9) NOT NULL, 
   days_to_rehab INTEGER (4) NOT NULL,
   project_status BOOLEAN,
-  PRIMARY KEY (project_id),
+  PRIMARY KEY (project_id)
 );

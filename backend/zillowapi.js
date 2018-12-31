@@ -3,8 +3,8 @@ var Zillow = require("node-zillow")
 var zillow = new Zillow('X1-ZWz187ifmasdfv_1fz14')
 
 var parameters = {
-    address: "12640 Classics Drive",
-    citystatezip: "Granada Hills, CA",
+    address: "",
+    citystatezip: "",
     rentzestimate: false
 }
 zillow.get('GetSearchResults', parameters)
