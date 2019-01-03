@@ -37,7 +37,6 @@ require('./routes')(app);
 
 
 
-  app.use(express.static("./public"));
   app.use(express.static('./assets/images')); 
 
 
