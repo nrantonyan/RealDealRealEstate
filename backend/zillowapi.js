@@ -2,11 +2,15 @@ var Zillow = require("node-zillow")
 
 var zillow = new Zillow('X1-ZWz187ifmasdfv_1fz14')
 
+var address = process.argv.slice(2).join(" ");
+var citystatezip = process.argv.slice(3).join(" ");
+
 var parameters = {
     address: "",
     citystatezip: "",
     rentzestimate: false
 }
+
 zillow.get('GetSearchResults', parameters)
     .then(results => {
         var zestimate = results.response.results.result[0].zestimate[0].amount[0];
