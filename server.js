@@ -13,6 +13,12 @@ var bodyParser = require("body-parser");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
+const exphbs = require('express-handlebars');
+app.engine('handlebars', exphbs({
+    defaultLayout: 'main'
+}));
+app.set('view engine', 'handlebars');
+
 // Requiring our models for syncing
 var db = require("./models");
 
@@ -27,11 +33,20 @@ app.use(express.static("./public"));
 
 // Routes =============================================================
 
+<<<<<<< HEAD
 // require("./routes/html-routes.js")(app);
 // require("./routes/api-routes.js")(app);
+=======
+require('./routes')(app);
 
-// Syncing our sequelize models and then starting our express app
-db.sequelize.sync({ force: false }).then(function(data, error) {
+
+
+  app.use(express.static("./public"));
+  app.use(express.static('./assets/images')); 
+
+>>>>>>> midnight-cleanup
+
+  db.sequelize.sync({ force: false }).then(function(data, error) {
     app.listen(PORT, function() {
         console.log("App listening on PORT " + PORT);
     });
