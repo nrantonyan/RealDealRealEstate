@@ -6,6 +6,6 @@ module.exports = function(app){
 
 
     app.use('/', application);
-    app.use('/projectInfo', calculatorForm);
+    app.use('/project', calculatorForm);
     
 }
