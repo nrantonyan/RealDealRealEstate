@@ -26,6 +26,13 @@ module.exports = function(sequelize, DataTypes) {
           len: [1]
         }
       },
+      ProjectZip: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+          len: [1]
+        }
+      },
       AfterRepairValue: {
         type: DataTypes.INTEGER,
         allowNull: false,
