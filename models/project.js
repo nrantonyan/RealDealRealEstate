@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-'use strict';
-
-module.exports = function (sequelize, Datatypes) {
-    
-}
-=======
 module.exports = function(sequelize, DataTypes) {
     var Project = sequelize.define("Project", {
       ProjectName: {
@@ -112,4 +105,3 @@ module.exports = function(sequelize, DataTypes) {
     return Project;
   };
   
->>>>>>> origin/models
