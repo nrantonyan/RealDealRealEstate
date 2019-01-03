@@ -24,8 +24,8 @@
     "fs": "0.0.1-security",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
+    "passport-google-oauth": "^1.0.0",
     "path": "^0.12.7",
-    "mysql": "^2.16.0",
     "sequelize": "^4.42.0"
   }
 }
