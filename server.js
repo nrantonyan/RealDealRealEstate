@@ -33,10 +33,6 @@ app.use(express.static("./public"));
 
 // Routes =============================================================
 
-<<<<<<< HEAD
-// require("./routes/html-routes.js")(app);
-// require("./routes/api-routes.js")(app);
-=======
 require('./routes')(app);
 
 
@@ -44,7 +40,6 @@ require('./routes')(app);
   app.use(express.static("./public"));
   app.use(express.static('./assets/images')); 
 
->>>>>>> midnight-cleanup
 
   db.sequelize.sync({ force: false }).then(function(data, error) {
     app.listen(PORT, function() {
