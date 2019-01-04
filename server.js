@@ -6,7 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
-
+var path = require('path');
 
 // Sets up the Express App
 // =============================================================
@@ -29,7 +29,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
-app.use(express.static("./public"));
+app.use('/public', express.static(path.join(__dirname,'public')));
 
 // Routes =============================================================
 
@@ -37,7 +37,6 @@ require('./routes')(app);
 
 
 
-  app.use(express.static('./assets/images')); 
 
 
   db.sequelize.sync({ force: false }).then(function(data, error) {

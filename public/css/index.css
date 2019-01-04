@@ -1,3 +1,5 @@
+
+
 header {
   padding: 10px;
   text-align: center;
@@ -57,24 +59,25 @@ header {
   height: auto;
 }
 
-footer{
+footer {
   background-color: black;
   color: whitesmoke;
 }
+
 .contact {
-  padding:25px;
+  padding: 25px;
   width: 50%;
   text-align: left;
   margin-left: 200px
-  
 }
 
 .connect {
-  padding:25px;
+  padding: 25px;
   width: 50%;
   text-align: left;
   margin-left: 200px
 }
+
 .social-media-icons {
   width: 40px;
 }
