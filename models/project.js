@@ -67,7 +67,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     scc: {
       type: DataTypes.INTEGER,
-      allowNull: fakse,
+      allowNull: false,
       validate: {
         isNumeric: true
       }

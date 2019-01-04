@@ -1,43 +1,24 @@
-<div class="row">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="row">
   </div>
-  <header class="header"><img src="/public/assets/images/IMG_0496.PNG" class="header-logo">
+  <header class="header">
+    <img src="/assets/images/IMG_0496.PNG" class="header-logo">
   </header>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img src="/public/assets/images/login-icon-index.png" id="login-icon"></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
+  {{> nav }}
+  {{> login-modal }}
   <!-- carousel -->
   <div class="carousel-img">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="/public/assets/images/house1.jpg" alt="First slide">
+          <img class="d-block w-100" src="/assets/images/house1.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="/public/assets/images/house 2.jpg" alt="Second slide">
+          <img class="d-block w-100" src="/assets/images/house 2.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="/public/assets/images/house3.jpg" alt="Third slide">
+          <img class="d-block w-100" src="/assets/images/house3.jpg" alt="Third slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -69,7 +50,7 @@
         <div class="input-group stylish-input-group">
           <input type="text" class="form-control" placeholder="Search">
           <span class="input-group-addon">
-            <button type="submit"><img src="/public/assets/images/Button_15-512.png" class="search-btn">
+            <button type="submit"><img src="/assets/images/Button_15-512.png" class="search-btn">
               <span class="glyphicon glyphicon-search"></span>
             </button>
           </span>
@@ -77,42 +58,4 @@
       </div>
     </div>
   </div>
-  <!-- footer -->
-  <footer>
-    <div class="row">
-      <div class="col-lg-6 col-sm-offset-3">
-        <div class="contact">
-          <h4>Contact</h4>
-          <div class="phone-header">
-            <h5>Phone:</h5>
-          </div>
-          <a href="800-555-5555">800-555-5555</a>
-          <div class="email-header">
-            <h5>Email:</h5>
-          </div>
-          <a href="agent@KeepingItReal.com">agent@KeepingItReal.com</a>
-          <div class="address-header">
-            <h5>Address:</h5>
-          </div>
-          <div class="company-address">
-            <p>15557 Wilshire Blvd., #1018 <br>
-              Los Angeles, CA 90026
-            </p>
-          </div>
-        </div>
-      </div>
-        <div class="col-lg-6 col-sm-offset-3">
-          <div class="connect">
-            <h4>Connect</h4>
-            <div class="social-media-btn">
-              <a href="#"><img src="/public/assets/images/facebook-icon.png" class="social-media-icons"></a>
-              <a href="#"><img src="/public/assets/images/twitter-icon.png" class="social-media-icons"></a>
-              <a href="#"><img src="/public/assets/images/instagram-icon.png" class="social-media-icons"></a>
-            </div>
-            <div class="Copyright">
-              &copy Copyright 2018
-            </div>
-          </div>
-        </div>
-      </div>  
-  </footer>
+  {{> footer}}

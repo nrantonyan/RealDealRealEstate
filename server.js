@@ -11,7 +11,12 @@ var path = require('path');
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8000;
+
+
+
+
+app.set('views', path.join(__dirname, 'views'));
 
 const exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({
@@ -24,17 +29,13 @@ var db = require("./models");
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Static directory
-app.use('/public', express.static(path.join(__dirname,'public')));
 
 // Routes =============================================================
 
 require('./routes')(app);
-
 
 
 
