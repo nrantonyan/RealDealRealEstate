@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('projects', {
+    return queryInterface.createTable('project', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -9,46 +9,69 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       projectName: {
-        type: Sequelize.STRING
+        type:DataTypes.STRING,
+        allowNull: true
       },
       projectAddressName: {
-        type: Sequelize.STRING
+        type:DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          len: [1]
+        }
       },
       projectCity: {
-        type: Sequelize.STRING
+        type:DataTypes.STRING,
+          allowNull: false,
+          validate: {
+            len: [1]
+          }
       },
       projectState: {
-        type: Sequelize.STRING
+          type:DataTypes.STRING,
+          allowNull: false,
+          validate: {
+            len: [1]
+          }
       },
       projectZip: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: false,
       },
       arv: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: true,
       },
       desiredProfit: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: true,
       },
       repairCosts: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: true,
       },
       bcc: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: true,
       },
       scc: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: true,
       },
       realitorFees: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: true,
       },
       monthlyHold: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: true,
       },
       daysRehab: {
-        type: Sequelize.INTEGER
+        type:DataTypes.INTEGER,
+        allowNull: true,
       },
       projectStatus: {
-        type: Sequelize.BOOLEAN
+        type:DataTypes.BOOLEAN,
+        defualtValue: false
       },
       createdAt: {
         allowNull: false,
@@ -61,6 +84,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('projects');
+    return queryInterface.dropTable('project');
   }
 };

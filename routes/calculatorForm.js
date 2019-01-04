@@ -4,8 +4,10 @@ var router  = express.Router();
 var calculator_controller = require('../controllers/calculator_controller');
 
 router.get('/', calculator_controller.index);
-router.post("/project/new", calculator_controller.info);
+// router.post("/project/new", calculator_controller.info);
 // router.post('/', calculator_controller.purchase);
+router.post('/', calculator_controller.Purchase);
+
 
 
 module.exports = router;
