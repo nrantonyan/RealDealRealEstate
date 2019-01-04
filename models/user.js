@@ -1,19 +1,30 @@
 'use strict';
+
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     first_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        len: [1]
+      }
     },
 
     last_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        len: [1]
+      }
       },
 
       phone: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        validate: {
+          isNumeric: true,  
+          len: [10]
+        }
       },
 
       location: {
@@ -23,6 +34,9 @@ module.exports = (sequelize, DataTypes) => {
       username: {
         type: DataTypes.STRING,
         allowNull: false,
+        validate: {
+          len: [6]
+        }
       },
       email: {
         type: DataTypes.STRING,
@@ -39,6 +53,9 @@ module.exports = (sequelize, DataTypes) => {
   });
   User.associate = function (models) {
     // associations can be defined here
+    User.hasMany(models.project, {
+      onDelete: "cascade"
+    });
   }
   return User;
 };
