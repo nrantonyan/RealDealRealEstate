@@ -1,3 +1,5 @@
+import { createProject } from "../../../controllers/calculator_controller";
+
 $(document).ready(function () {
 
   // setting varibles for the purchases
@@ -12,17 +14,17 @@ $(document).ready(function () {
     event.preventDefault();
     var projectData = {
       projectName: projectName.val().trim(),
-      projectAddressName: projectAddress.val().trim(),
+      projectAddress: projectAddress.val().trim(),
       projectCity: projectCity.val().trim(),
       projectState: projectState.val().trim(),
       projectZip: projectZip.val().trim(),
     };
 
-    if (!projectDate.projectName || !projectDate.projectAddressName || !projectDate.projectCity || !projectDate.projectState || !projectDate.projectZip) {
+    if (!projectDate.projectName || !projectDate.projectAddress || !projectDate.projectCity || !projectDate.projectState || !projectDate.projectZip) {
       return alert("Please fill in the missing information for " + projectData + " and try again.");
     }
 
-    purchase(projectDate.projectName, projectDate.projectAddressName, projectDate.projectCity, projectDate.projectState, projectDate.projectZip);
+    createProject(projectDate.projectName, projectDate.projectAddress, projectDate.projectCity, projectDate.projectState, projectDate.projectZip);
     projectName.val("");
     projectAddress.val("");
     projectCity.val("");
@@ -31,8 +33,8 @@ $(document).ready(function () {
 
   });
 
-  function purchase(projectName, projectAddress, projectCity, projectState, projectZip) {
-    $.post("/calculator/purchase", {
+  function createProject(projectName, projectAddress, projectCity, projectState, projectZip) {
+    $.post("/project/info", {
       projectName: projectName,
       projectAddress: projectAddress,
       projectCity: projectCity,
@@ -42,7 +44,7 @@ $(document).ready(function () {
       if (data.duplicateProjectName) {
         alert("You have already created a project with this name.")
       } else {
-        window.location = data.redirect;
+        res.render('calculator/purchase')
       }
     }).catch(function (err) {
       console.log(err);
