@@ -1,7 +1,15 @@
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="row">
+  </div>
+  <header class="header">
+    <img src="/assets/images/IMG_0496.PNG" class="header-logo">
+  </header>
 
+  {{> nav }}
+
+  <br>
 
     <div class="container">
-        <form action="" method="POST" id="form2">
             <h2>Purchasing Information</h2>
             <div class="form-row">
                 <div class="form-group col-md-3 ">
@@ -25,7 +33,9 @@
                     </div>
                 </div>
             </div>
-        </form>
-        <button type="submit" class="btn btn-primary" id="submit" form="form2">Next Step</button>
+        <input type="submit" id="next2" onclick="window.location = '/project/costs'" value="Next">
     </div>
 
+<br>
+
+{{> footer}}
