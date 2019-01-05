@@ -1,6 +1,6 @@
 import {
     signUpUser
-} from "../../../routes/users";
+} from"../../../routes/users";
 
 $(document).ready(function () {
 
@@ -16,7 +16,7 @@ $(document).ready(function () {
     var repeatPasswordInput = $("input#password2_input");
 
     signUpButton.on('click', function (event) {
-
+      event.preventDefault();
         var userData = {
             first_name: firstnameInput.val().trim(),
             last_name: lastnameInput.val().trim(),
