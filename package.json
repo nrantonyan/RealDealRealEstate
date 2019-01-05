@@ -1,7 +1,7 @@
 {
   "name": "realdealrealestate",
   "version": "1.0.0",
-  "description": "Please note that we have already created a package.json and saved it to the master branch. Therefore, you will not need to do an npm init.",
+  "description": "Please note that we have already created a package.json and saved it to the master branch. Therefore, you will not need to do an npm init.",  
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
