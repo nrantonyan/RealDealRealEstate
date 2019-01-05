@@ -13,6 +13,10 @@ exports.costs = function (req, res) {
   res.render('calculator/costs')
 }
 
+exports.results = function (req, res) {
+  res.render('calculator/results')
+}
+
 
 
 exports.createProject = function (req, res) {
