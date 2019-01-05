@@ -1,0 +1,43 @@
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="row">
+  </div>
+  <header class="header">
+    <img src="/assets/images/IMG_0496.PNG" onclick="window.location = '/' " class="header-logo">
+  </header>
+
+
+
+  {{> nav }}
+
+  <br>
+
+    <div class="container">
+            <h2>Purchasing Information</h2>
+            <div class="form-row">
+                <div class="form-group col-md-3 ">
+                    <label for="projectArv">After Repair Value (ARV)</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="text" class="form-control" id="arv" name="arv" required aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="projectProfit">Desired Profit</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="text" class="form-control" id="desiredProfit" name="desiredProfit" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+            </div>
+        <input type="submit" id="next2" onclick="window.location = '/project/costs'" value="Next">
+    </div>
+
+<br>
+
+{{> footer}}

@@ -1,0 +1,54 @@
+{{> nav }}
+{{> login-modal }}
+
+<div class="container bootstrap snippet">
+    <div class="row">
+  		<div class="col-sm-10"><h1>User name</h1></div>
+    </div>
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+              
+
+      <div class="text-center">
+        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+        <h6>Upload a different photo...</h6>
+        <input type="file" class="text-center center-block file-upload">
+      </div></hr><br>
+
+               
+          <div class="panel panel-default">
+            <div class="panel-heading">About Me <i class="fa fa-link fa-1x"></i></div>
+            <div class="panel-body"><p>I have experience in flipping houses.  I'm crazy good at it. </div>
+          </div>
+          
+               
+          <div class="panel panel-default">
+            <div class="panel-heading">Social Media</div>
+            <div class="panel-body">
+              <a href="#"><img src="/assets/images/facebook-icon.png" class="social-media-icons"></a>
+              <a href="#"><img src="/assets/images/twitter-icon.png" class="social-media-icons"></a>
+              <a href="#"><img src="/assets/images/instagram-icon.png" class="social-media-icons"></a>
+            </div>
+          </div>
+          
+        </div><!--/col-3-->
+    	<div class="col-sm-9">
+                  <h3>User Information</h3>
+                  <table class="table table-hover">
+ 				<ul>
+        	{{#each users}} 
+						{{#if this.user_id}}
+          		<li>
+            		<p class="username1">{{this.user_firstname}}</p>
+          		</li>
+        		{{/if}} 
+					{{/each}}
+        </ul>
+                  </table>
+              
+              <hr>
+              </div>
+          </div>
+
+        </div>
+    </div>

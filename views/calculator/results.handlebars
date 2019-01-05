@@ -1,0 +1,44 @@
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="row">
+  </div>
+  <header class="header">
+    <img src="/assets/images/IMG_0496.PNG" onclick="window.location = '/' " class="header-logo">
+  </header>
+
+{{> nav}}
+
+<br>
+
+<div class="container">
+	
+	<div class="row">
+		
+        <ul>
+            <li>
+                <h3>Project ID: {{ this.dataValues.id }}</h3> 
+				<h3>Project Name: {{ this.dataValues.projectName }}</h3> 
+				<h3>Address: {{ this.dataValues.projectAddress }}</h3> 
+				<h3>City: {{ this.dataValues.projectCity }}</h3> 
+				<h3>State: {{ this.dataValues.projectState }}</h3> 
+				<h3>Zip: {{ this.dataValues.projectZip }}</h3> 
+				<h3>ARV: {{ this.dataValues.arv }}</h3> 
+				<h3>Desired Profit: {{ this.dataValues.desiredProfit }}</h3> 
+				<h3>Repair Costs: {{ this.dataValues.repairCosts }}</h3> 
+				<h3>BCC: {{ this.dataValues.bcc }}</h3>
+                <h3>SCC: {{ this.dataValues.scc }}</h3> 
+                <h3>Realtor Fees: {{ this.dataValues.realtorFees }}</h3> 
+                <h3>Monthly Hold: {{ this.dataValues.monthlyHold }}</h3> 
+                <h3>Days Rehab: {{ this.dataValues.daysRehab }}</h3> 
+            </li>
+				
+        </ul>
+		
+	</div>
+</div>
+
+<br>
+
+{{> footer}}
+
+
+
