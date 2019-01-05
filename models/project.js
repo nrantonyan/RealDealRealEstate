@@ -1,37 +1,36 @@
-'use strict';
 
 
 module.exports = (sequelize, DataTypes) => {
   const project = sequelize.define('project', {
     projectName: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
 
     },
     projectAddress: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [1]
       }
     },
     projectCity: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [1]
       }
     },
     projectState: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [1]
       }
     },
     projectZip: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       validate: {
         isNumeric: true,
         len: [5, 9]
@@ -39,59 +38,43 @@ module.exports = (sequelize, DataTypes) => {
     },
     arv: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
+      
     },
     desiredProfit: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
+      
     },
     repairCosts: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
+      
     },
     bcc: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
+      
     },
     scc: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
+      
     },
     realtorFees: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
+      
     },
     monthlyHold: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
+      
     },
     daysRehab: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
+      
     },
     projectStatus: {
       type: DataTypes.BOOLEAN,
@@ -102,7 +85,7 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     project.belongsTo(models.User, {
       foreignKey: {
-        allowNull: false
+        allowNull: true
       }
     });
   }
