@@ -1,6 +1,16 @@
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="row">
+  </div>
+  <header class="header">
+    <img src="/assets/images/IMG_0496.PNG" class="header-logo">
+  </header>
+
+  {{> nav }}
+
+  <br>
+
 <div class="container">
 
-    <form action="" method="POST" id="project-infoForm">
         <h2>Project Information</h2>
         <hr>
         <div class="form-row">
@@ -43,7 +53,9 @@
                 <input type="text" class="form-control" id="projectZip" name="projectZip" placeholder="#####">
             </div>
         </div>
-        <input type="submit" id="next" onclick="window.location = ''" value="Next">
-    </form>
+        <input type="submit" id="next" onclick="window.location = '/project/purchase'" value="Next">
 
 </div>
+<br>
+
+{{> footer}}
