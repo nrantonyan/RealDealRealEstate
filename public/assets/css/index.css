@@ -1,5 +1,3 @@
-
-
 header {
   padding: 10px;
   text-align: center;
@@ -78,6 +76,12 @@ footer {
   margin-left: 200px
 }
 
-.social-media-icons {
-  width: 40px;
+.social-media-btn {
+    width: 40px;
+}
+
+.fa-facebook  {
+  font: 20px;
+  color: white;
+
 }
