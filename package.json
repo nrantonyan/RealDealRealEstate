@@ -1,7 +1,7 @@
 {
   "name": "realdealrealestate",
   "version": "1.0.0",
-  "description": "Please note that we have already created a package.json and saved it to the master branch. Therefore, you will not need to do an npm init.",  
+  "description": "Please note that we have already created a package.json and saved it to the master branch. Therefore, you will not need to do an npm init.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,13 +20,13 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^3.0.2",
     "fs": "0.0.1-security",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
     "passport-google-oauth": "^1.0.0",
     "path": "^0.12.7",
-    "sequelize": "^4.42.0",
+    "sequelize": "^4.43.0",
     "sequelize-cli": "^5.4.0"
   }
 }
